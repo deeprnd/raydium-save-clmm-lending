@@ -5,7 +5,7 @@ pub mod instructions;
 
 use instructions::*;
 
-declare_id!("E9iJcnzprVCjrJiSVfPKVEqLvSN2jTn9qwKXJFhEUnrm");
+declare_id!("441hQCsxuqCJumMNPdGaZxBzTtuLbadAaH3hcnTufPZR"); // devnet
 
 #[program]
 pub mod clmm_manager {
@@ -64,5 +64,17 @@ pub mod clmm_manager {
         amount_1_min: u64,
     ) -> Result<()> {
         instructions::proxy_decrease_liquidity(ctx, liquidity, amount_0_min, amount_1_min)
+    }
+
+    pub fn deposit(ctx: Context<Deposit>, amount: u64) -> Result<()> {
+        instructions::proxy_deposit_loan::deposit(ctx, amount)
+    }
+
+    pub fn borrow(ctx: Context<Borrow>, amount: u64) -> Result<()> {
+        instructions::proxy_borrow_loan::borrow(ctx, amount)
+    }
+
+    pub fn repay_loan(ctx: Context<Repay>, amount: u64) -> Result<()> {
+        instructions::proxy_repay_loan::repay(ctx, amount)
     }
 }

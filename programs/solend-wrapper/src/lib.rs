@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{Token, TokenAccount};
 
-declare_id!("Cj2icEd2Zb8dzZQ6eEyUdTm5n86hBxD2KNU9qJtS9pSR");
+declare_id!("ALend7Ketfx5bxh6ghsCDXAoDrhvEmsXT3cynB6aPLgx"); // devnet
 
 #[program]
 pub mod solend_wrapper {

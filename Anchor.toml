@@ -7,8 +7,8 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-clmm_manager = "E9iJcnzprVCjrJiSVfPKVEqLvSN2jTn9qwKXJFhEUnrm"
-solend_wrapper = "Cj2icEd2Zb8dzZQ6eEyUdTm5n86hBxD2KNU9qJtS9pSR"
+clmm_manager = "441hQCsxuqCJumMNPdGaZxBzTtuLbadAaH3hcnTufPZR"
+solend_wrapper = "ALend7Ketfx5bxh6ghsCDXAoDrhvEmsXT3cynB6aPLgx"
 
 [registry]
 url = "https://api.apr.dev"
